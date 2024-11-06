@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #8f74c3, #5275b5);
+}
+
+/* Container for Flexbox layout */
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Card styling */
+.card {
+    background: #e0e4ff62;
+    backdrop-filter: blur(30px);
+    opacity: 0.8;
+    border-radius: 4px;
+    padding: 20px;
+    width: 200px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title styling */
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Description styling */
+.card p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 15px;
+   
+}
+
+/* List styling */
+.card ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.card ul li {
+    margin: 5px 0;
+    font-size: 12px;
+    line-height: 30px;
+    border-bottom: 1px solid gray;
+
+    
+}
+.card:nth-child(2) {
+
+    height: 500px; /* Adjust this height as needed */
+    /* margin-top: 50px; Adjust to control vertical alignment */
+    transform: translateY(-50px); 
+}
+
+/* Price styling */
+.price {
+    font-size: 32px !important;
+    margin: 15px 0;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+ 
+}
+
+/* Button styling */
+.card button {
+    background: #fffd38;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.card button:hover {
+    transform: scale(1.05);
+}
+
